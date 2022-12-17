@@ -1,0 +1,25 @@
+{
+  "name": "goit-hw-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "index.js",
+    "start:dev": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kseniia30/goit-hw-node.git"
+  },
+  "author": "Kseniia30",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kseniia30/goit-hw-node/issues"
+  },
+  "homepage": "https://github.com/Kseniia30/goit-hw-node#readme",
+  "dependencies": {
+    "commander": "^9.4.1",
+    "uid": "^2.0.1"
+  }
+}
