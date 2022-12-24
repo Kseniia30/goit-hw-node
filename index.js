@@ -27,9 +27,8 @@ async function invokeAction({ action, id, name, email, phone }) {
 
       case "get":
         const сontact = await getContactById(id);
-        if (сontact === void 0) {
-          const message = `no contact by id ${id}`;
-          console.log(message);
+        if (сontact === undefined) {
+          console.log(`no contact by id ${id}`);
           return;
         }
         console.log("Your contact is find");
@@ -44,13 +43,11 @@ async function invokeAction({ action, id, name, email, phone }) {
 
       case "remove":
         const remContact = await removeContact(id);
-        if (remContact === void 0) {
-          const message = `no contact by id ${id}`;
-          console.log(message);
+        if (remContact === undefined) {
+          console.log(`no contact by id ${id}`);
           return;
         }
         console.log(`Contact with id: ${id} was deleted`);
-        console.table(remContact);
         break;
 
       default:
